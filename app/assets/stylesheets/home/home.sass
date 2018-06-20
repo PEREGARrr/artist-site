@@ -1,0 +1,63 @@
+/**
+ * home.sass
+ * Home page specific styles
+ */
+
+@import ../shared/mixins/*
+@import ../shared/variables/*
+
+header
+  .margin-left-medium
+    margin-left: 20px
+
+  section
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)))
+    color: $white
+    height: auto
+    padding-bottom: 40px
+    position: absolute
+    width: 100vw
+    z-index: 1
+
+    h1
+      font-weight: 200
+      margin: 0px 0px 0px 0px
+
+  h1, h2, h4, a
+    font-weight: 200
+    text-align: center
+    text-shadow: $black-text-shadow
+
+  h1
+    font-size: 8vw
+
+  h2
+    font-size: 6vw
+    margin: 10px 0px 0px
+
+  h4, a
+    color: $white
+    font-size: 3.5vw
+    font-weight: 300
+    text-decoration: none
+    margin-top: 0px
+    margin-bottom: 0px
+
+    .margin-left
+      margin-left: 20px
+
+    span
+      cursor: pointer
+
+      &:hover
+        color: $off-white
+
+  .img
+    height: auto
+    width: 100vw
+    z-index: 0
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)))
+
+@media screen and (max-width: 860px)
+  section .padding-right, section .padding-left
+    padding: 0%

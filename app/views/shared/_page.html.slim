@@ -1,0 +1,9 @@
+main
+  = render 'shared/nav'
+  section
+    h1= label
+    hr
+  = render 'shared/grid', images: @images, paginate: true, image_type: image_type
+  #push
+
+= render 'shared/footer'

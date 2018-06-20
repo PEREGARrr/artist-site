@@ -1,0 +1,43 @@
+@import mixins/*
+
+.row.header
+  background: #000000
+
+  .section
+    nav
+      li:hover > ul
+        background: rgba(0, 0, 0, 0.75)
+        top: 99%
+
+      .menu
+        a
+          color: #ffffff
+          font-weight: 400
+          overflow: hidden
+          padding: 1.24em
+          text-decoration: none
+
+        li
+          background: initial
+
+
+#menu-toggle-label
+  z-index: 1
+
+
+@media screen and (max-width: 860px)
+  nav
+    border-bottom: inherit !important
+
+    .icon-menu
+      background-image: asset-url('general/icon-menu.png')
+
+    #menu-toggle:checked + .icon-menu
+      background-image: asset-url('general/icon-close.png')
+
+  .row.header, .row.header .section, .row.header .section nav
+    height: auto
+    min-height: 4.25em
+
+  .row.header .section nav
+    overflow: hidden

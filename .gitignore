@@ -1,0 +1,23 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+/node_modules
+/yarn-error.log
+/config/aws_var.yml
+
+.byebug_history
+.env
+.env.development
+.DS_Store
+/public/packs
+/public/system
+/node_modules
+todos.md
+/public/packs
+/node_modules

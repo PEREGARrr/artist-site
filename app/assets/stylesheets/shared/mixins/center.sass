@@ -1,0 +1,42 @@
+=center-h
+  left: 50%
+  position: absolute
+  transform: translateX(-50%)
+
+=center-v-h($height, $width)
+  bottom: 0
+  left: 0
+  margin: auto
+  position: absolute
+  right: 0
+  top: 0
+
+  height: $height
+  width: $width
+
+=margin-0-auto
+  margin: 0 auto
+  max-width: 1168px
+
+  @media screen and (max-width: 1250px)
+    max-width: 876px !important
+
+  @media screen and (max-width: 900px)
+    max-width: 584px !important
+
+  @media screen and (max-width: 584px)
+    max-width: 80% !important
+
+
+=margin-0-auto-offset($offset)
+  margin: 0 auto
+  +calc( max-width, '1168px - 40px')
+
+  @media screen and (max-width: 1250px)
+    +calc( max-width, '876px - 40px')
+
+  @media screen and (max-width: 900px)
+    +calc( max-width, '584px - 40px')
+
+  @media screen and (max-width: 584px)
+    +calc( max-width, '80% - 40px')

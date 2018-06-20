@@ -1,0 +1,42 @@
+@import mixins/*
+
+footer
+  background: #000
+  color: #ffffff
+  height: auto
+  min-height: 80px
+  overflow: hidden
+
+  .padding-right
+    padding-right: 10%
+
+  .padding-left
+    padding-left: 10%
+
+  a
+    color: #ffffff
+
+    &:hover
+      opacity: 0.8
+
+  .half
+    display: table-cell
+    width: 50%
+
+  ul
+    list-style: none
+    margin: 0px
+    padding: 0px
+
+    li
+
+      ul
+        padding: 0px 30px
+
+        li
+          margin: 4px 0px
+
+
+@media screen and (max-width: 860px)
+  footer .padding-right, footer .padding-left
+    padding: 0%

@@ -1,0 +1,36 @@
+footer
+  section
+    .col-1-3
+      .padding-right
+        h3 About
+        p Mikhailo is a artist from Ukraine. Favorite themes of drawings are nature and animals.
+
+    .col-1-3
+      h3 Links
+      .half
+        ul
+          li= link_to 'Home', root_url
+          li= link_to 'Profile', profile_url
+          li= link_to 'Commissions', commissions_url
+          li= link_to 'For Sale', artwork_types_for_sale_url
+
+      .half
+        ul
+          li
+            = link_to 'Artwork', artworks_url
+            ul
+              li= link_to 'Pastel', artwork_types_pastel_url
+              li= link_to 'Paintings', artwork_types_painting_url
+              li= link_to 'Sketches', artwork_types_sketch_url
+              li= link_to 'Featured', artwork_types_featured_url
+
+    .col-1-3
+      .padding-left
+        h3 Contact
+        p
+          | You always can contact at
+          |  <a href='mailto:mcagafonov@gmail.com' target='_top'>mcagafonov@gmail.com</a>.
+        h3 Commissions
+        p
+          | I accept orders for drawings. Prices may be found 
+          |  <a href='/commissions'>here</a>.

@@ -1,0 +1,37 @@
+= javascript_pack_tag 'instafeed'
+
+// Main Header
+header
+  section
+    h1 Evans Blue
+    h2 Bushido
+
+    // Social Media Links
+    hr
+    h4
+      span= link_to 'Profile', controller: 'home', action: 'profile'
+      span.margin-left= link_to 'Artwork', controller: 'artworks'
+      span.margin-left= link_to 'Commissions', controller: 'home', action: 'commissions'
+      span.margin-left= link_to 'For Sale', controller: 'artworks', action: 'for_sale'
+      span.margin-left= link_to 'Contact', 'mailto:mcagafonov@gmail.com'
+
+    hr
+
+
+  = image_tag 'general/wolf.jpg', class: 'img'
+
+
+// Instafeed.js
+#instafeed
+javascript:
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: "#{ENV['INSTA_USER']}",
+    accessToken: "#{ENV['INSTA_ACCESS']}",
+    resolution: 'low_resolution',
+    useHttp: true
+  });
+  userFeed.run();
+
+// Footer
+= render 'shared/footer'

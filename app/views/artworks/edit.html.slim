@@ -1,0 +1,11 @@
+main
+  = render 'shared/nav'
+  section
+    h1 Editing Artwork
+    hr
+    = render 'artworks/partials/form', artwork: @artwork
+    = render 'artworks/partials/display', artwork: @artwork
+
+  #push
+
+= render 'shared/footer'
